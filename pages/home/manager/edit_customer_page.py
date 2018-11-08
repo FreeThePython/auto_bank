@@ -9,7 +9,7 @@ import re
 
 
 
-class NewCustomerPage(BasePage):
+class EditCustomerPage(BasePage):
 
     log = cl.customLogger(logging.DEBUG)
 
@@ -43,7 +43,7 @@ class NewCustomerPage(BasePage):
     _edit_customer_reset = "//input[@value='Reset']"
 
 
-    def clickNewCustomer(self):
+    def clickeditCustomer(self):
         self.elementClick(self._new_customer_link, locatorType="xpath")
 
     def enterCustomer(self, customername):
